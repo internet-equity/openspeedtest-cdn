@@ -1,0 +1,3 @@
+= OpenSpeedTest at Edge
+
+Terraform configuration to provision the OpenSpeedTest at the Internet's Edge with AWS CloudFront.
