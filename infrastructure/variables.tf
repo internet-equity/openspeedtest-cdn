@@ -31,7 +31,7 @@ variable "zone_id" {
 }
 
 variable "html_path" {
-  description = "Local filesystem path from which static site files should be uploaded"
-  default = "${path.module}/html"
+  description = "Local filesystem path from which static site files should be uploaded (defaults to included html/ directory)"
+  default = null
   type = string
 }

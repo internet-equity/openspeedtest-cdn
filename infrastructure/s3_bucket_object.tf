@@ -1,7 +1,7 @@
 # fileset() nearly works but does not provide content-type
 module "html" {
   source                  = "hashicorp/dir/template"
-  base_dir                = var.html_path
+  base_dir                = var.html_path != null ? var.html_path : "${path.module}/html"
 }
 
 resource "aws_s3_object" "html" {
